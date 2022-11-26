@@ -1,61 +1,113 @@
-body{
-      margin: 0%;
-      background-color: aliceblue;
+*{
+      margin: 0px;
+      padding: 0px;
 }
-#container_family{
-      width: 100vw;
-      height: 100vh;
+
+body{
+      margin: 5%;
+      background: url('../img/madera.webp');
+}
+#cuerpo{
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       font-family: 'Asap', sans-serif;
 }
-.conten{
-      display: flex;
-      flex-direction: column;
-      width: 17em;
-      box-shadow: 1px 2px 15px black;
-      border: none;
-      border-radius: 15px;
-      padding: 5%;
+
+div#general{
+      margin: auto;
+      width: 930px;
+      height: 480px;
+      border-radius: 25px;
+      background-color: #ffff;
 }
-.score{
+
+div#score{
       width: 100%;
+      margin: auto;
+      margin-top: 25px ;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 120%;
+      font-size: 220%;
 }
-.play{
+
+div#result{
+      margin: auto;
+      margin-top: 30px;
+      margin-left: 30px;
+      border-radius: 20px;
+      width: 400px;
+      height: 340px;
+      float: left;
+      background: url('../img/ss.png') 890px 400px;
+}
+
+div#play{
+      margin: auto;
+      margin-top: 25px;
       display: flex;
       width: 100%;
-      gap: 5%;
-}.ganar, .perder, .intento{
+}
+
+div#ganar{
       display: flex;
       flex-direction: column;
       width: 45%;
       align-items: center;
-}.ganar{
-      color: rgb(103, 225, 103);
 }
+
+div#perder{
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      align-items: center;
+}
+
+div#intento{
+      display: flex;
+      flex-direction: column;
+      width: 45%;
+      align-items: center;
+}
+
 .perder{
-      color: red;
+      color: aquamarine;
 }
-.intento{
-      color: cornflowerblue;
+
+.ganar{
+      color: aquamarine;
 }
+
 #h1{
       font-size: 1.3em;
 }
-#titulo{
-      display: flex;
+
+div#form{
+      width: 450px;
+      margin: auto;
+      color: #ffff;
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: 30px;
+      float: right;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      margin-top: 5%;
-      font-family: cursive;
-      font-size: 80%;
+      background: url('../img/ss.png') 550px 600px;
+      height: 340px;
 }
+
+div#casil{
+      margin: auto;
+      margin-left: 10px;
+      margin-right: 10px;
+}
+
 .labe{
+      margin: auto;
+      margin-top: 10px;
       display: flex;
       align-self: center;
       justify-content: center;
@@ -71,22 +123,18 @@ label{
 }
 #inpu{
       display: flex;
+      margin-left: 35px;
       align-self: center;
       justify-content: center;
       flex-direction: column;
+      margin-right: 10px;
 }
-#inpu button{
-      margin-top: 3%;
-      margin-bottom: 4%;
-      height: 2.5em;
-      font-size: 90%;
-      background-color: darkgray;
-      border: none;
-      border-radius: 13px;
-}
+
 input{
       font-family: 'Asap', sans-serif;
+      margin: 0 auto;
       height: 2em;
+      width: 200px;
       margin-bottom: 5%;
       border-radius: 10px;
 }
@@ -95,19 +143,12 @@ input{
       justify-content: center;
       margin-top: 7%;
 }
-#terminarr{
-      width: 84.5%;
-      height: 2.5em;
-      font-size: 100%;
-      border-radius: 10px;
-      border: none;
-      background-color: thistle;
-}
+
 .moneda{
+      margin-top: 45px;
       width: 8em;
-      height: 8em;  
-      margin-left: 25%;  
-      transform-style: preserve-3d;   
+      height: 8em;
+      transform-style: preserve-3d;
 }
 .moneda div{
       width: 100%;
@@ -119,22 +160,20 @@ input{
       width: 10em;
       height: 10em;  
       margin-left: 20%;  
-      transform-style: preserve-3d;   
 }
 .moneda div{
       width: 100%;
       height: 100%;
       backface-visibility: hidden;
-      position: absolute;
 }
 .cara{
       border-radius: 50%;
-      background: url('../img/nueva_1000_cara_235.png');
+      background: url('../img/cara.png');
       background-size: contain;
      
 }
 .sello{
-     background: url(../img/nueva_1000_sello_235.png);
+     background: url('../img/sello.png');
      background-size: contain;
       border-radius: 50%;
       transform: rotateY(-175deg);
